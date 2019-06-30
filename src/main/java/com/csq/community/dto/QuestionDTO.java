@@ -1,14 +1,10 @@
-package com.csq.community.model;
+package com.csq.community.dto;
 
+import com.csq.community.model.User;
 import lombok.Data;
 
-/**
- * @author ercai
- * @date 2019/6/29 - 18:07
- */
 @Data
-public class Question {
-
+public class QuestionDTO {
     private Integer id;
     private String title;
     private String description;
@@ -19,4 +15,5 @@ public class Question {
     private Integer viewCount;
     private Integer commentCount;
     private Integer likeCount;
+    private User user;
 }
